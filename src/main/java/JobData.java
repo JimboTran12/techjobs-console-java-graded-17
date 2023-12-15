@@ -38,6 +38,7 @@ public class JobData {
                 values.add(aValue);
             }
         }
+        Collections.sort(values);
 
         return values;
     }
@@ -46,8 +47,9 @@ public class JobData {
 
         // load data, if not already loaded
         loadData();
+        ArrayList<HashMap<String, String>> copy = new ArrayList<>(allJobs);
 
-        return allJobs;
+        return copy;
     }
 
     /**

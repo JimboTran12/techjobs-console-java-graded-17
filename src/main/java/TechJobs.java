@@ -70,7 +70,7 @@ public class TechJobs {
         }
     }
 
-    // ﻿Returns the key of the selected item from the choices Dictionary
+    //Returns the key of the selected item from the choices Dictionary
     private static String getUserSelection(String menuHeader, HashMap<String, String> choices) {
 
         int choiceIdx = -1;
@@ -123,6 +123,7 @@ public class TechJobs {
             System.out.printf("No Results");
         }
         else {
+            System.out.println();
             for (HashMap<String, String> row : someJobs) {
                 System.out.println("*****");
                 for (Map.Entry<String, String> data : row.entrySet()) {
